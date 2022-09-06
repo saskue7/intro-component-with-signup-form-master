@@ -1,0 +1,151 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+ background: url("./images/bg-intro-desktop.png") hsl(0, 100%, 74%);
+ color: white;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+ /* text-align: center; */
+ padding: 10% 10%;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ place-content: center;
+ place-items: center;
+ gap: 2rem;
+ /* background: red; */
+
+}
+
+/* txt */
+common-txt h1{
+ width: 400px;
+ font-size: 2.5rem;
+ margin-bottom: 2rem;
+}
+main{
+  box-shadow: 6px 6px 10px 0px rgb(110, 89, 89);
+ width: 500px;
+ border-radius: 5px;
+ padding: 30px;
+ background: white;
+ display: flex;
+ flex-direction: column;
+}
+header{
+ margin-bottom: 20px;
+}
+.header{
+ padding-top: 10px;
+ text-align: center;
+ background: hsl(248, 32%, 49%);
+ border-radius: 6px;
+ width: 500px;
+ height: 50px;
+ box-shadow: 6px 6px 10px 0px rgb(110, 89, 89);
+}
+header h1{
+ font-size: 14px;
+}
+/* input */
+.content{
+ /* width: 430px; */
+ 
+ padding: 5px;
+ border-radius: 10px;
+}
+input{
+ padding-left: 20px;
+ padding-right: 20px;
+ margin: 20px 5px;
+ height: 50px;
+ border-radius: 5px;
+ outline: none;
+ border: 2px solid rgb(173, 148, 148);
+}
+input:focus{
+ border: 2px solid red;
+}
+button{
+ margin-top: 10px;
+ width: 430px;
+ margin-left: 4px;
+ height: 50px;
+ border-radius: 5px;
+ border: none;
+ background: hsl(154, 59%, 51%);
+ color: white;
+ font-size: 1.2rem;
+ cursor: pointer;
+}
+button:hover{
+ background: rgb(118, 241, 118);
+}
+main p{
+ margin-top: 10px;
+ text-align: center;
+ color: grey;
+ font-size: 12px;
+}
+span{
+ color: red;
+}
+.error-info {
+ margin-top: -10px;
+ text-align: end;
+ padding-right: 12px;
+ color: red;
+}
+.hidden{
+ display: none;
+}
+
+@media screen and (max-width:950px){
+ section{
+  text-align: center;
+  flex-direction: column;
+  place-content: center;
+ }
+ common-txt{
+  width: 100vw;
+  /* background: red; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+}
+
+@media screen and (max-width:500px) {
+ body{
+  min-width: 375px;
+ }
+ main{
+  width: 340px;
+ }
+ common-txt{
+  width: 300px;
+ }
+ common-txt h1{
+  /* background: blue; */
+  width: 300px;
+  font-size: 1.8rem;
+ }
+ common-txt p{
+  /* margin: 60px; */
+  /* height: 200px; */
+  /* background: red; */
+ }
+ 
+ .header{
+  padding: 30px;
+  width: 340px;
+   height: 100px;
+ }
+ button{
+  width: 275px;
+ }
+}
